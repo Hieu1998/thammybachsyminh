@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#particles-js {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(
+        120deg,
+        rgba(7, 7, 9, 1) 16%,
+        rgba(27, 24, 113, 1) 96%
+    );
+    background-repeat: no-repeat;
+}
+
+.hero {
+    background-image: url('./images/hospital-background.jpg'); /* Đổi đường dẫn đến hình ảnh bệnh viện của bạn */
+    background-size: cover;
+    background-attachment: fixed; /* Đặt thuộc tính này để hình nền di chuyển chậm hơn khi cuộn */
+    background-position: center;
+    padding: 100px 0;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Làm chữ nổi bật với bóng chữ mạnh hơn */
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.service-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-box img {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của hộp dịch vụ */
+    height: 310px;
+    object-fit: cover;
+    border-radius: 8px; /* Tạo các góc bo tròn nhẹ cho hình chữ nhật */
+    margin-bottom: 15px;
+}
+
+.service-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.service-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.testimonial-box,
+.result-box {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.testimonial-img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.map-container {
+    margin-top: 30px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* CSS cho phần liên hệ */
+#contact {
+    background-color: #f8f9fa; /* Nền sáng cho phần liên hệ */
+    padding: 60px 0; /* Padding trên và dưới */
+}
+
+#contact h2, #contact h3 {
+    font-size: 2rem; /* Kích thước chữ tiêu đề */
+    color: #333;
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    font-weight: bold;
+}
+
+#contact p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#contact .img-fluid {
+    max-width: 150px; /* Đảm bảo kích thước mã QR không quá lớn */
+    height: auto;
+}
+
+/* Đặc biệt cho tên chuyên viên tư vấn */
+#contact h3.gradient-text {
+    font-size: 1.5rem;
+}
+
+/* ZALO Button */
+.zalo-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00bfae;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.zalo-button:hover {
+    transform: translateY(-5px);
+}
+
+/* ZALO Icon */
+.zalo-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Shake Effect */
+@keyframes shake {
+    0% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    100% { transform: translateX(-5px); }
+}
+
+.zalo-button.shake {
+    animation: shake 0.5s ease infinite;
+}
+
+#teamSlider .carousel-inner .carousel-item {
+    text-align: center;
+}
+
+#teamSlider .carousel-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff;
+}
+
+/* Tiêu đề của các phần */
+section h2 {
+    font-size: 2.5rem; /* Kích thước chữ lớn hơn */
+    color: #333; /* Màu chữ tối hơn để nổi bật */
+    font-weight: bold; /* Chữ đậm */
+    margin-bottom: 30px; /* Khoảng cách dưới tiêu đề */
+    text-transform: uppercase; /* Viết hoa tất cả chữ cái */
+    position: relative;
+    padding-bottom: 10px;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 50px; /* Chiều rộng đường kẻ dưới */
+    height: 4px; /* Độ cao đường kẻ dưới */
+    background-color: #007bff; /* Màu đường kẻ dưới */
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.container {
+    background-color: #fff; /* Nền trắng cho các phần chứa nội dung chính */
+    padding: 20px;
+    border-radius: 8px; /* Bo góc cho các khối nội dung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ cho các khối nội dung */
+}
+
+/* CSS cho màu chữ gradient */
+.gradient-text {
+    background: linear-gradient(
+        120deg,
+        rgba(7, 7, 9, 1) 16%,
+        rgba(27, 24, 113, 1) 96%
+    );
+    -webkit-background-clip: text; /* Đối với Chrome và Safari */
+    -webkit-text-fill-color: transparent; /* Để làm cho văn bản trong suốt và cho phép gradient hiển thị */
+    background-clip: text; /* Đối với các trình duyệt khác */
+    color: transparent; /* Đảm bảo văn bản không có màu khác */
+}
